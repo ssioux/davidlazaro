@@ -1,0 +1,117 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  box-shadow: rgb(209, 54, 54) 0px 2px 15px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background: #fff;
+  width: 100%;
+  height: 70px;
+  z-index: 3;
+  min-width: 500px;
+
+  .logo {
+    padding: 8px 0;
+    img {
+      margin-left: 20px;
+      width: 44px;
+    }
+  }
+
+  nav {
+    text-align:right;
+    width: 100%;
+
+    a {
+      margin: 10px;
+      font-size: 22px;
+      color: #4d4d4e;
+      line-height: 51px;
+      height: 51px;
+
+      text-decoration: none;
+    }
+
+    a.active {
+      svg {
+        color: rgb(209, 54, 54);
+      }
+    }
+  }
+}
+
+.hamburguer-icon,
+.close-icon {
+  display: none;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    display: flex;
+    background: transparent;
+    position: initial;
+    height: auto;
+    justify-content: left;
+    width: 100%;
+    min-height: auto;
+    background-color: #fff;
+    position: sticky;
+    box-shadow: rgb(209, 54, 54) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+    .logo {
+      margin-left: 11px;
+      img {
+        width: 34px;
+      }
+    }
+
+    ul,
+    nav {
+      display: none;
+    }
+
+    nav {
+      width: 100%;
+      height: 100%;
+      background: #181818;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: 2;
+      margin: 0;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10px;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+      &.mobile-show {
+        display: block;
+        background-color: #fff;
+        height: 300px;
+        box-shadow: rgb(209, 54, 54) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      }
+    }
+
+    .hamburguer-icon,
+    .close-icon {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+}
