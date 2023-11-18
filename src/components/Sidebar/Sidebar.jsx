@@ -1,7 +1,7 @@
-import { Link, NavLink } from 'react-router-dom'
-import './sidebar.scss'
-import LogoDalaes from '../../assets/images/David-logo.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link, NavLink } from "react-router-dom";
+import "./sidebar.scss";
+import LogoDalaes from "../../assets/images/David-logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
   faChessKnight,
@@ -11,26 +11,30 @@ import {
   faHome,
   faSuitcase,
   faUser,
-} from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react'
+} from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const Sidebar = () => {
   // shows or not hamburguer menu
-  const [showNav, setShowNav] = useState(false)
+  const [showNav, setShowNav] = useState(false);
 
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
-        <img src={LogoDalaes} alt="David-logo" />
-      </Link>
-      <nav className={showNav ? 'mobile-show' : ''}>
+      <div>
+        {" "}
+        <Link className="logo" to="/">
+          <img src={LogoDalaes} alt="David-logo" />
+        </Link>
+      </div>
+
+      <nav className={showNav ? "mobile-show" : ""}>
         <NavLink
           onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           to="/"
         >
-       <FontAwesomeIcon icon={faHome} color="#4d4d4e" /> Home
+          <FontAwesomeIcon icon={faHome} color="#4d4d4e" /> Home
         </NavLink>
 
         <NavLink
@@ -40,10 +44,8 @@ const Sidebar = () => {
           className="about-link"
           to="about"
         >
-      <FontAwesomeIcon icon={faUser} color="#4d4d4e" /> About
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" /> About
         </NavLink>
-
-
 
         <NavLink
           onClick={() => setShowNav(false)}
@@ -52,7 +54,7 @@ const Sidebar = () => {
           className="portfolio-link"
           to="/portfolio"
         >
-         <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" /> Projects
+          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" /> Projects
         </NavLink>
 
         <NavLink
@@ -92,7 +94,7 @@ const Sidebar = () => {
         className="hamburguer-icon"
       />
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

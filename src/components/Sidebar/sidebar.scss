@@ -1,6 +1,8 @@
 .nav-bar {
+  border: 2px solid blue;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   box-shadow: rgb(209, 54, 54) 0px 2px 15px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   background: #fff;
@@ -10,32 +12,38 @@
   min-width: 500px;
 
   .logo {
-    padding: 8px 0;
+    margin-left: 40px;
     img {
-      margin-left: 20px;
-      width: 44px;
+      width: 40px;
     }
   }
 
   nav {
-    text-align:right;
-    width: 100%;
-
-    a {
-      margin: 10px;
-      font-size: 22px;
-      color: #4d4d4e;
-      line-height: 51px;
-      height: 51px;
-
-      text-decoration: none;
-    }
-
-    a.active {
-      svg {
-        color: rgb(209, 54, 54);
+    margin-right: 40px;
+   
+      a {
+        cursor: pointer;
+        margin: 10px;
+        padding: 10px;
+        font-size: 22px;
+        color: #4d4d4e;
+        line-height: 51px;
+        height: 51px;
+        text-decoration: none;
+        transition: all 0.3s ease-out;
       }
-    }
+
+      a:hover {
+        color: rgb(209, 54, 54);
+        transition: all 0.3s ease-in;
+      }
+
+      a.active {
+        svg {
+          color: rgb(209, 54, 54);
+        }
+      }
+    
   }
 }
 
