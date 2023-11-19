@@ -12,70 +12,84 @@ import {
   faSuitcase,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+import { HashLink } from "react-router-hash-link";
 
 const Sidebar = () => {
   // shows or not hamburguer menu
   const [showNav, setShowNav] = useState(false);
+  const [activeLink, setActiveLink] = useState("home");
+  const [scrolled, setScrolled] = useState(false);
+  // Sticky Navbar when scrolls down
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+    setShowNav(false);
+  };
   return (
-    <div className="nav-bar">
+    <section className={scrolled ? "nav-bar scrolled" : "nav-bar"}>
       <div>
-        {" "}
-        <Link className="logo" to="/">
+        <HashLink className="logo" smooth to="#">
           <img src={LogoDalaes} alt="David-logo" />
-        </Link>
+        </HashLink>
       </div>
 
       <nav className={showNav ? "mobile-show" : ""}>
-        <NavLink
-          onClick={() => setShowNav(false)}
+        <HashLink
+          onClick={() => onUpdateActiveLink("home")}
+          className={activeLink === "home" ? "active" : ""}
           exact="true"
-          activeclassname="active"
-          to="/"
+          smooth
+          to="#"
         >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" /> Home
-        </NavLink>
+        </HashLink>
 
-        <NavLink
-          onClick={() => setShowNav(false)}
+        <HashLink
+                  onClick={() => onUpdateActiveLink("about")}
+                  className={activeLink === "about" ? "active" : ""}
           exact="true"
-          activeclassname="active"
-          className="about-link"
-          to="about"
+        
+          smooth
+          to="#about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" /> About
-        </NavLink>
+        </HashLink>
 
-        <NavLink
-          onClick={() => setShowNav(false)}
+        <HashLink
+          onClick={() => onUpdateActiveLink("projects")}
+          className={activeLink === "projects" ? "active" : ""}
           exact="true"
-          activeclassname="active"
-          className="portfolio-link"
-          to="/portfolio"
+      
+          smooth
+          to="#projects"
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" /> Projects
-        </NavLink>
+        </HashLink>
 
-        <NavLink
-          onClick={() => setShowNav(false)}
+        <HashLink
+          onClick={() => onUpdateActiveLink("contact")}
           exact="true"
-          activeclassname="active"
-          className="contact-link"
-          to="/contact"
+          className={activeLink === "contact" ? "active" : ""}
+          smooth
+          to="#contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" /> Contact
-        </NavLink>
-
-        <NavLink
-          onClick={() => setShowNav(false)}
-          exact="true"
-          activeclassname="active"
-          className="chess-link"
-          to="/chess"
-        >
-          <FontAwesomeIcon icon={faChessKnight} color="#4d4d4e" /> Chess
-        </NavLink>
+        </HashLink>
 
         <FontAwesomeIcon
           onClick={() => setShowNav(false)}
@@ -93,7 +107,7 @@ const Sidebar = () => {
         size="3x"
         className="hamburguer-icon"
       />
-    </div>
+    </section>
   );
 };
 

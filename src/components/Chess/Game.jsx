@@ -197,7 +197,6 @@ function Game() {
           </div>
         </div>
       </div>
-      <Loader type="cube-transition" />
     </>
   )
 }

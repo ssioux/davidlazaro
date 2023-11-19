@@ -1,29 +1,23 @@
 .who-page {
-  border: 2px solid red;
   height: 100vh;
-  
-
-
+  padding-top: 100px;
 
   .page {
     display: flex;
-      justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
     .text-zone {
       padding: 10%;
-  
-      border: 2px solid red;
-  
+
       img {
         width: 45px;
       }
     }
-  
+
     .picture-zone {
       padding: 10%;
-      border: 2px solid red;
     }
-  
+
     h1 {
       color: #fff;
       font-size: 70px;
@@ -31,7 +25,7 @@
       margin: 0;
       font-family: "Coolvetica";
       font-weight: 400;
-  
+
       img {
         margin-left: 20px;
         opacity: 0;
@@ -41,7 +35,7 @@
         animation-delay: 1.4s;
       }
     }
-  
+
     h2 {
       color: #8d8d8d;
       margin-top: 20px;
@@ -52,8 +46,6 @@
       animation: fadeIn 1s 1.8s backwards;
     }
   }
-
-  
 
   .flat-button {
     color: rgb(209, 54, 54);

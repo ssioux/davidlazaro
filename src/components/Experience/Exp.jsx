@@ -1,7 +1,8 @@
-import "./exp.scss"
+import "./exp.scss";
 export default function Exp() {
   return (
-    <h1>EXPERIENCE</h1>
-  )
+    <section className="experience-page" id="experience">
+      <h1>EXPERIENCE</h1>
+    </section>
+  );
 }
-

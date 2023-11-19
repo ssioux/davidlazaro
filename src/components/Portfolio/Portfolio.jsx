@@ -1,16 +1,13 @@
-import './portfolio.scss'
+import "./portfolio.scss";
 
 const Portfolio = () => {
- 
- 
-  
-
-
   return (
     <>
-     <h1>PORTFOLIO</h1>
+      <section className="portfolio-page" id="projects">
+         <h1>PORTFOLIO</h1>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
