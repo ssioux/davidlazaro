@@ -22,7 +22,7 @@ const Sidebar = () => {
   // Sticky Navbar when scrolls down
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 200) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -38,6 +38,7 @@ const Sidebar = () => {
     setActiveLink(value);
     setShowNav(false);
   };
+  
   return (
     <section className={scrolled ? "nav-bar scrolled" : "nav-bar"}>
       <div>
@@ -58,10 +59,9 @@ const Sidebar = () => {
         </HashLink>
 
         <HashLink
-                  onClick={() => onUpdateActiveLink("about")}
-                  className={activeLink === "about" ? "active" : ""}
+          onClick={() => onUpdateActiveLink("about")}
+          className={activeLink === "about" ? "active" : ""}
           exact="true"
-        
           smooth
           to="#about"
         >
@@ -72,7 +72,6 @@ const Sidebar = () => {
           onClick={() => onUpdateActiveLink("projects")}
           className={activeLink === "projects" ? "active" : ""}
           exact="true"
-      
           smooth
           to="#projects"
         >

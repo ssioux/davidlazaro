@@ -1,6 +1,3 @@
-import "./about.scss";
-import { useEffect, useState } from 'react'
-import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './about.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
@@ -10,7 +7,6 @@ const About = () => {
 
   return (
     <>
-      
       <section className="about-page" id="about">
       <div className="about-text-zone">
           <h1>
