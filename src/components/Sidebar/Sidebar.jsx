@@ -1,10 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
 import "./sidebar.scss";
 import LogoDalaes from "../../assets/images/David-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
-  faChessKnight,
   faClose,
   faEnvelope,
   // faHandshake,
