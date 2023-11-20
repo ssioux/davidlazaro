@@ -22,12 +22,14 @@ body {
 }
 
 .dashboard {
+  padding: 10%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid red;
-  width: 80%;
+  width: 100%;
 
-  margin-top: 200px;
-  margin-left: 200px;
+
 }
 
 .dashboard-form {

@@ -63,7 +63,7 @@ const Portfolio = () => {
   return (
     <>
       <section className="portfolio-page" id="projects">
-        <h1 className="page-title">Portfolio</h1>
+        <h1 className="page-title">Projects</h1>
         <div>{renderPortfolio(portfolio)}</div>
       </section>
     </>
