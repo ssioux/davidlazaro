@@ -16,7 +16,7 @@ function App() {
           <Route path="/chess" element={<Chess />} />
           <Route path="/dashboard" element={<MainDashBoard />} />
           {/* Error Pages */}
-          <Route path="/error" element={<Error />} />
+   
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

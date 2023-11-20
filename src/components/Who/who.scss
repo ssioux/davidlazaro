@@ -3,11 +3,14 @@
   padding-top: 100px;
 
   .page {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
     .text-zone {
       padding: 10%;
+      width: 50%;
 
       img {
         width: 45px;
@@ -15,7 +18,14 @@
     }
 
     .picture-zone {
-      padding: 10%;
+      width: 25%;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: rgb(82, 58, 58) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      }
     }
 
     h1 {

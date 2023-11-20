@@ -6,36 +6,33 @@
   height: 500px;
   width: 100vw;
 
-
   .about-text-zone {
-    
     padding-top: 3%;
 
     width: 50%;
 
     h1 {
-        color: #333;
-        font-size: 50px;
-        line-height: 53px;
-        margin: 0;
-        font-family: "Coolvetica";
-        font-weight: 400;
-        margin-bottom: 5%;
+      color: #333;
+      font-size: 50px;
+      line-height: 53px;
+      margin: 0;
+      font-family: "Coolvetica";
+      font-weight: 400;
+      margin-bottom: 5%;
     }
 
     p {
-        color: white;
-        font-size: 20px;
+      color: white;
+      font-size: 20px;
     }
   }
 
   .stage-cube-cont {
     padding: 7%;
 
-margin: 0 auto;
+    margin: 0 auto;
 
     width: 50%;
-
   }
 }
 

@@ -3,10 +3,10 @@ import "./portfolio.scss";
 import { useEffect, useState } from "react";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../../firebase";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Portfolio = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [portfolio, setPortfolio] = useState([]);
 
@@ -22,7 +22,8 @@ const Portfolio = () => {
         querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
       );
     } catch (error) {
-      navigate("/error");
+      console.log("portfolio-error",error)
+      // navigate("/error");
     }
   };
 

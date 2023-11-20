@@ -1,8 +1,8 @@
 import "./who.scss";
 
-import davidPicture from "../../assets/images/David-rem.png";
+import davidPicture from "../../assets/images/DavidFoto.jpg";
 import LogoTitle from "../../assets/images/David-rem.png";
-import { Link } from "react-router-dom";
+
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./who.scss";
