@@ -1,6 +1,7 @@
 .who-page {
   height: 100vh;
   padding-top: 100px;
+  width: 100vw;
 
   .page {
     width: 100%;
@@ -9,7 +10,7 @@
     align-items: center;
 
     .text-zone {
-      padding: 10%;
+      padding: 5%;
       width: 50%;
 
       img {
@@ -83,49 +84,52 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .tags,
-  .home-page h1::before,
-  .home-page h1::after {
-    display: none;
-  }
-
-  .home-page {
+  .who-page {
     width: auto;
     margin-left: 9px;
-    .text-zone {
-      position: initial;
-      width: 100%;
-      transform: none;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-
-    h1 {
-      color: #fff;
-      font-size: 49px;
-      line-height: 53px;
-      margin: 0;
-      font-family: "Coolvetica";
-      font-weight: 400;
-    }
-
-    .flat-button {
-      float: none;
-      display: block;
-      margin: 20px auto 0 auto;
-      width: 125px;
-    }
-
-    .logo-container {
+    margin-bottom: 30px;
+    svg {
       display: none;
-      position: relative;
-      width: 100px;
-      height: auto;
-      top: 50px;
-      right: 0;
-      box-sizing: border-box;
-      margin: auto;
-      left: 0;
+    }
+
+    .page {
+      width: 500px;
+      flex-direction: column;
+     
+
+      .text-zone {
+        position: initial;
+        width: 100%;
+        transform: none;
+        padding: 0px;
+        box-sizing: border-box;
+        margin-left: 20px;
+      }
+
+      h1 {
+        color: #fff;
+        font-size: 60px;
+        line-height: 53px;
+        margin: 0;
+        font-family: "Coolvetica";
+        font-weight: 400;
+      }
+      h2 {
+        margin-bottom: 40px;
+      }
+
+      .flat-button {
+        float: none;
+        width: 125px;
+      }
+
+      .picture-zone {
+        
+       margin-top: 40px;
+       
+       width: 40%;
+      
+      }
     }
   }
 }

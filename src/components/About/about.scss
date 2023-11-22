@@ -108,6 +108,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+  .about-text-zone {
+   width: 100%;
+  }
   .stage-cube-cont {
     position: initial;
     width: 100%;
@@ -115,3 +119,4 @@
     overflow: visible;
   }
 }
+
