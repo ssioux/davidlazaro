@@ -46,7 +46,7 @@ function Who() {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={"avid Lázaro".split("")}
-              idx={18}
+              idx={19}
             />
             <br />
             {/* Animation for 'web developer.' */}
@@ -58,7 +58,7 @@ function Who() {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={"Web.".split("")}
-              idx={22}
+              idx={30}
             />
           </h1>
           <h2>Frontend Developer </h2>
