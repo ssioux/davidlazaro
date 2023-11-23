@@ -27,6 +27,14 @@ const Contact = () => {
   };
   return (
     <>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+          <path
+            fill="#D13636"
+            d="M0,32L48,64C96,96,192,160,288,160C384,160,480,96,576,101.3C672,107,768,181,864,208C960,235,1056,213,1152,176C1248,139,1344,85,1392,58.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
       <section className="contact-page" id="contact">
         <div className="contact-text-zone">
           <h1>Contact me</h1>
@@ -81,7 +89,7 @@ const Contact = () => {
           <span>dlazaro7@gmail.com</span>
         </div>
         <div className="map-wrap">
-          {/* Map library - https://react-leaflet.js.org/ */}
+         {/* Map library - https://react-leaflet.js.org/ */}
           <MapContainer
             center={[42.35165648088065, -3.6716139533494894]}
             zoom={13}
@@ -92,9 +100,18 @@ const Contact = () => {
                 David Lázaro lives here, come over for a cup of coffee :)
               </Popup>
             </Marker>
-          </MapContainer>
-        </div>
+          </MapContainer></div>
+          
+   
       </section>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+          <path
+            fill="#D13636"
+            d="M0,32L48,64C96,96,192,160,288,160C384,160,480,96,576,101.3C672,107,768,181,864,208C960,235,1056,213,1152,176C1248,139,1344,85,1392,58.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
     </>
   );
 };

@@ -12,7 +12,7 @@ import {
 const About = () => {
   return (
     <>
-      <div>
+      <div id="about">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
           <path
             fill="#D13636"
@@ -21,7 +21,7 @@ const About = () => {
         </svg>
       </div>
 
-      <section className="about-page" id="about">
+      <section className="about-page">
         <div className="about-text-zone">
           <h1>About me</h1>
           <p>
@@ -63,7 +63,7 @@ const About = () => {
         </div>
       </section>
 
-      <div>
+      <div id="projects">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#D13636"

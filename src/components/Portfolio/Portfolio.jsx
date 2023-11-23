@@ -61,6 +61,7 @@ const Portfolio = () => {
       </div>
     );
   };
+  
   return (
     <>
       <section className="portfolio-page" id="projects">

@@ -22,11 +22,13 @@ const Sidebar = () => {
   // Sticky Navbar when scrolls down
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+    if (window.scrollY >= 100 ) {
+      setScrolled(true)
+     } else {
+      setScrolled(false)
+     }
+     
+
     };
 
     window.addEventListener("scroll", onScroll);

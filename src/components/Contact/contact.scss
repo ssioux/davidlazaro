@@ -1,35 +1,40 @@
 .contact-page {
-  width: 100vw;
-  height: 1500px;
+ 
+  
+  padding-left: 100px;
+  padding-right: 50px;
+  width: 100%;
+  position: initial;
+  background-color: #d13636;
+  display: flex;
   .contact-text-zone {
     padding-top: 3%;
     width: 50%;
 
     h1 {
-        color: #333;
-        font-size: 50px;
-        line-height: 53px;
-        margin: 0;
-        font-family: "Coolvetica";
-        font-weight: 400;
-        margin-bottom: 5%;
+      color: #333;
+      font-size: 50px;
+      line-height: 53px;
+      margin: 0;
+      font-family: "Coolvetica";
+      font-weight: 400;
+      margin-bottom: 5%;
     }
 
     p {
-        color: white;
-        font-size: 20px;
+      color: white;
+      font-size: 20px;
     }
   }
-
 
   .contact-form {
     width: 100%;
     margin-top: 20px;
-  
+
     ul {
       padding: 0;
       margin: 0;
-  
+
       li {
         padding: 0;
         margin: 0;
@@ -43,50 +48,55 @@
         animation: fadeInUp 2s 2s;
         animation-fill-mode: forwards;
       }
-  
+
       li.half {
         width: 49%;
         margin-left: 2%;
         float: left;
         clear: none;
-  
+
         &:first-child {
           margin-left: 0;
         }
       }
     }
-  
-    input[type='text'],
-    input[type='email'] {
+
+    input[type="text"],
+    input[type="email"] {
       width: 100%;
       border: 0;
-      background: rgb(150, 28, 28);
+      background: #333;
       height: 50px;
       font-size: 16px;
       color: #fff;
       padding: 0 20px;
       box-sizing: border-box;
+    border-radius: 10px;
+
     }
-  
+
     textarea {
       width: 100%;
       border: 0;
-      background: rgb(150, 28, 28);
+      background: #333;
       height: 50px;
       font-size: 16px;
       color: #fff;
       padding: 20px;
       box-sizing: border-box;
       min-height: 150px;
+    border-radius: 10px;
+
     }
-  
+
     .flat-button {
-      color: rgb(209, 54, 54);
+      cursor: pointer;
+      color: #d13636;
       font-size: 11px;
       letter-spacing: 3px;
       text-decoration: none;
       padding: 8px 10px;
-      border: 1px solid rgb(209, 54, 54);
+      border: 1px solid #333;
       float: left;
       border-radius: 4px;
       background: 0 0;
@@ -94,23 +104,25 @@
       float: right;
       text-align: center;
       margin-right: 10px;
+      background-color: #333;
     }
-  }
   
-  .info-map {
-    
-    background-color: #000;
+  }
 
+  .info-map {
+    background-color: #000;
+    border-radius: 10px;
     width: 267px;
+    height: 180px;
     padding: 20px;
     color: #fff;
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 17px;
     font-weight: 300;
     opacity: 0;
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
-  
+
     span {
       font-size: 16px;
       display: block;
@@ -118,35 +130,32 @@
       color: rgb(209, 54, 54);
     }
   }
-  
-  .map-wrap {
 
-    background:rgb(209, 54, 54);
+  .map-wrap {
+    border-radius: 10px;
+    background: #333;
     width: 500px;
     height: 500px;
 
+    box-shadow: rgb(82, 58, 58) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+  
   }
-  
+
   .leaflet-container {
-  
-    width: 100%;
     height: 100%;
     opacity: 0;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
   }
-
-
 }
-
-
-
 
 @media screen and (max-width: 1200px) {
   .map-wrap {
     position: relative;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 400px;
     margin: 0;
