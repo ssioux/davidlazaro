@@ -27,12 +27,13 @@
       margin: 10px;
       padding: 10px;
       font-size: 22px;
-      color: #4d4d4e;
+      color: #ffffff94;
       line-height: 51px;
       height: 51px;
       text-decoration: none;
       transition: all 0.3s ease-out;
       svg {
+        color: #ffffff94;
         transition: all 0.3s ease-out;
       }
     }
@@ -64,10 +65,10 @@
   transition: all 0.1s ease-in;
   nav {
     a {
-      color: #a3a3a3;
+      color: #747474;
       transition: all 0.3s ease-out;
       svg {
-        color: #a3a3a3;
+        color: #747474;
         transition: all 0.3s ease-out;
       }
     }
