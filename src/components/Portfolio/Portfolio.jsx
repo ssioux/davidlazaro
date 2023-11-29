@@ -1,32 +1,8 @@
 import "./portfolio.scss";
 
-import { useEffect, useState } from "react";
-import { getDocs, collection } from "firebase/firestore";
-import { db } from "../../firebase";
-// import { useNavigate } from "react-router-dom";
+import portfolioData from "../Portfolio/data.json";
 
 const Portfolio = () => {
-  // const navigate = useNavigate();
-
-  const [portfolio, setPortfolio] = useState([]);
-
-  useEffect(() => {
-    getPortfolio();
-  });
-
-  const getPortfolio = async () => {
-    try {
-      const querySnapshot = await getDocs(collection(db, "portfolio"));
-
-      setPortfolio(
-        querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
-      );
-    } catch (error) {
-      console.log("portfolio-error",error)
-      // navigate("/error");
-    }
-  };
-
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
@@ -61,12 +37,12 @@ const Portfolio = () => {
       </div>
     );
   };
-  
+
   return (
     <>
       <section className="portfolio-page" id="projects">
         <h1 className="page-title">Projects</h1>
-        <div>{renderPortfolio(portfolio)}</div>
+        <div>{renderPortfolio(portfolioData.portfolio)}</div>
       </section>
     </>
   );

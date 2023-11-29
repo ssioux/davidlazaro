@@ -32,8 +32,6 @@ body {
   align-items: center;
   border: 2px solid red;
   width: 100%;
-
-
 }
 
 .dashboard-form {
@@ -62,5 +60,11 @@ body {
 @media screen and (max-width: 1200px) {
   body {
     overflow: visible;
+  }
+  .who-page {
+    width: 500px;
+  }
+  .contact-page {
+    width:100;
   }
 }

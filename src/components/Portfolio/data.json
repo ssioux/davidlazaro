@@ -1,0 +1,48 @@
+{
+    "portfolio": [
+        {
+            "image": "/covers/esChall-project.png",
+            "name": "ES-CHALLENGE",
+            "description": "React, MongoDB, NodeJs, Express, JWT, Axios, JavaScript, html, css",
+            "webUrl": "",
+            "codeUrl": "https://github.com/ssioux/es-challenge-client"
+
+        },
+        {
+            "image": "/covers/chess400h.png",
+            "name": "MY CHESS",
+            "description": "TypeScript, React, NextJs, html, Sass",
+            "webUrl": "https://dalaes-chess.vercel.app/",
+            "codeUrl": "https://github.com/ssioux/chess"
+
+        },        {
+            "image": "/covers/sioux400h.png",
+            "name": "SIOUX",
+            "description": "React | JavaScript | HTML | CSS",
+            "webUrl": "https://ssioux.github.io/portfolio/",
+            "codeUrl": "https://github.com/ssioux/portfolio"
+
+        },        {
+            "image": "/covers/dalaes400h.png",
+            "name": "DAVID LÁZARO",
+            "description": "JavaScript | Vite | ReactJS | Firebase | HTML | SASS",
+            "webUrl": "https://dalaes.vercel.app/",
+            "codeUrl": "https://github.com/ssioux/dalaes"
+
+        },        {
+            "image": "/covers/ironworld400h.png",
+            "name": "IRONWORLD",
+            "description": "HandleBars, JavaScript, NodeJs, Express, HTML, CSS",
+            "webUrl": "https://ironworld.cyclic.app/",
+            "codeUrl": "https://github.com/borjacabello/IronWorld"
+
+        },        {
+            "image": "/covers/SuicideFarm400h.png",
+            "name": "SUICIDE FARM",
+            "description": "JavaScript, Canvas, Jquery, DOM, HTML | CSS",
+            "webUrl": "https://ssioux.github.io/Suicide-Farm/",
+            "codeUrl": "https://github.com/ssioux/Suicide-Farm"
+
+        }
+    ]
+}

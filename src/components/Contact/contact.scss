@@ -1,12 +1,11 @@
 .contact-page {
- 
-  
   padding-left: 100px;
   padding-right: 50px;
   width: 100%;
   position: initial;
   background-color: #d13636;
   display: flex;
+
   .contact-text-zone {
     padding-top: 3%;
     width: 50%;
@@ -71,8 +70,7 @@
       color: #fff;
       padding: 0 20px;
       box-sizing: border-box;
-    border-radius: 10px;
-
+      border-radius: 10px;
     }
 
     textarea {
@@ -85,8 +83,7 @@
       padding: 20px;
       box-sizing: border-box;
       min-height: 150px;
-    border-radius: 10px;
-
+      border-radius: 10px;
     }
 
     .flat-button {
@@ -106,7 +103,6 @@
       margin-right: 10px;
       background-color: #333;
     }
-  
   }
 
   .info-map {
@@ -138,9 +134,7 @@
     height: 500px;
 
     box-shadow: rgb(82, 58, 58) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-
-  
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 
   .leaflet-container {
@@ -152,16 +146,116 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .map-wrap {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 400px;
-    margin: 0;
-  }
+  .contact-page {
 
-  .info-map {
-    display: none;
+
+    .contact-text-zone {
+
+      h1 {
+        color: #333;
+        font-size: 10px;
+        line-height: 53px;
+        margin: 0;
+        font-family: "Coolvetica";
+        font-weight: 400;
+        margin-bottom: 5%;
+      }
+
+      p {
+        color: white;
+        font-size: 20px;
+      }
+    }
+
+    .contact-form {
+      width: 100%;
+      margin-top: 20px;
+
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          margin-bottom: 10px;
+          opacity: 0;
+          overflow: hidden;
+          display: block;
+          clear: both;
+          position: relative;
+          animation: fadeInUp 2s 2s;
+          animation-fill-mode: forwards;
+        }
+
+        li.half {
+          width: 49%;
+          margin-left: 2%;
+          float: left;
+          clear: none;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        border: 0;
+        background: #333;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+
+      textarea {
+        width: 100%;
+        border: 0;
+        background: #333;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        min-height: 150px;
+        border-radius: 10px;
+      }
+
+      .flat-button {
+        cursor: pointer;
+        color: #d13636;
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid #333;
+        float: left;
+        border-radius: 4px;
+        background: 0 0;
+        text-transform: uppercase;
+        float: right;
+        text-align: center;
+        margin-right: 10px;
+        background-color: #333;
+      }
+    }
+
+    .info-map {
+      display: none;
+    }
+
+    .map-wrap {
+      display: none;
+    }
+
+    .leaflet-container {
+      display: none;
+    }
   }
 }
