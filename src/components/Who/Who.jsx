@@ -1,6 +1,6 @@
 import "./who.scss";
 
-import davidPicture from "../../assets/images/DavidFoto.jpg";
+import davidPicture from "../../assets/images/David_Foto.jpg";
 import LogoTitle from "../../assets/images/David-rem.png";
 
 import { useEffect, useState } from "react";
@@ -26,7 +26,7 @@ function Who() {
   return (
     <>
     <section className="who-page">
-      <div className="page">
+  
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -61,9 +61,9 @@ function Who() {
               idx={30}
             />
           </h1>
-          <h2>Frontend Developer </h2>
+          <h2>Full Stack </h2>
           <HashLink smooth to="#contact" className="flat-button">
-            CONTACT ME <FontAwesomeIcon icon={faEnvelope} />
+            CONTACTA ME <FontAwesomeIcon icon={faEnvelope} />
           </HashLink>
           <a
             href="https://www.linkedin.com/in/david-l%C3%A1zaro/"
@@ -85,7 +85,7 @@ function Who() {
         <div className="picture-zone">
           <img src={davidPicture} alt="David-picture" />
         </div>
-      </div>
+
  
     </section>
     
