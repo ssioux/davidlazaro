@@ -1,54 +1,62 @@
 {
-    "portfolio": [
-        {
-            "image": "/covers/esChall-project.png",
-            "name": "ES-CHALLENGE",
-            "description": "Tourney generator",
-            "webUrl": "",
-            "codeUrl": "https://github.com/ssioux/es-challenge-client",
-            "tech": ["js","react", "html", "css", "node", "mongo", "express", "jwt", "axios"]
-        },
-        {
-            "image": "/covers/chess400h.png",
-            "name": "MY CHESS",
-            "description": "Chess game",
-            "webUrl": "https://dalaes-chess.vercel.app/",
-            "codeUrl": "https://github.com/ssioux/chess",
-            "tech": ["js","react", "html", "sass", "next", "ts"]
-
-        },        {
-            "image": "/covers/sioux400h.png",
-            "name": "SIOUX",
-            "description": "Portfolio",
-            "webUrl": "https://ssioux.github.io/portfolio/",
-            "codeUrl": "https://github.com/ssioux/portfolio",
-            "tech": ["js","react", "html", "css"]
-
-
-        },        {
-            "image": "/covers/dalaes400h.png",
-            "name": "DAVID LÁZARO",
-            "description": "JavaScript | Vite | ReactJS | Firebase | HTML | SASS",
-            "webUrl": "https://dalaes.vercel.app/",
-            "codeUrl": "https://github.com/ssioux/dalaes",
-            "tech": ["faJsSquare","faReact", "faHtml5", "faCss3"]
-
-        },        {
-            "image": "/covers/ironworld400h.png",
-            "name": "IRONWORLD",
-            "description": "HandleBars, JavaScript, NodeJs, Express, HTML, CSS",
-            "webUrl": "https://ironworld.cyclic.app/",
-            "codeUrl": "https://github.com/borjacabello/IronWorld",
-            "tech": ["faJsSquare","faReact", "faHtml5", "faCss3"]
-
-        },        {
-            "image": "/covers/SuicideFarm400h.png",
-            "name": "SUICIDE FARM",
-            "description": "JavaScript, Canvas, Jquery, DOM, HTML | CSS",
-            "webUrl": "https://ssioux.github.io/Suicide-Farm/",
-            "codeUrl": "https://github.com/ssioux/Suicide-Farm",
-            "tech": ["faJsSquare","faReact", "faHtml5", "faCss3"]
-
-        }
-    ]
+  "portfolio": [
+    {
+      "image": "/covers/esChall-project.png",
+      "name": "ES-CHALLENGE",
+      "description": "Generador de torneos",
+      "webUrl": "",
+      "codeUrl": "https://github.com/ssioux/es-challenge-client",
+      "tech": [
+        "js",
+        "react",
+        "html",
+        "css",
+        "node",
+        "mongo",
+        "express",
+        "axios",
+        "jwt"
+      ]
+    },
+    {
+      "image": "/covers/chess400h.png",
+      "name": "MY CHESS",
+      "description": "Chess game",
+      "webUrl": "https://dalaes-chess.vercel.app/",
+      "codeUrl": "https://github.com/ssioux/chess",
+      "tech": ["js", "react", "html", "sass", "next", "ts"]
+    },
+    {
+      "image": "/covers/sioux400h.png",
+      "name": "SIOUX",
+      "description": "Portfolio",
+      "webUrl": "https://ssioux.github.io/portfolio/",
+      "codeUrl": "https://github.com/ssioux/portfolio",
+      "tech": ["js", "react", "html", "css"]
+    },
+    {
+      "image": "/covers/dalaes400h.png",
+      "name": "DAVID LÁZARO",
+      "description": "Portfolio",
+      "webUrl": "https://dalaes.vercel.app/",
+      "codeUrl": "https://github.com/ssioux/dalaes",
+      "tech": ["vite", "react", "js", "html", "css", "firebase"]
+    },
+    {
+      "image": "/covers/ironworld400h.png",
+      "name": "IRONWORLD",
+      "description": "Red social",
+      "webUrl": "https://ironworld.cyclic.app/",
+      "codeUrl": "https://github.com/borjacabello/IronWorld",
+      "tech": ["js", "handlebars", "html", "css", "node", "mongo", "express"]
+    },
+    {
+      "image": "/covers/SuicideFarm400h.png",
+      "name": "SUICIDE FARM",
+      "description": "Arcade game",
+      "webUrl": "https://ssioux.github.io/Suicide-Farm/",
+      "codeUrl": "https://github.com/ssioux/Suicide-Farm",
+      "tech": ["js", "html", "jquery", "css"]
+    }
+  ]
 }

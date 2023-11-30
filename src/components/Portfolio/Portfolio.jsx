@@ -2,9 +2,9 @@ import "./portfolio.scss";
 
 import portfolioData from "../Portfolio/data.json";
 import { DiCss3, DiReact, DiHtml5, DiNodejsSmall } from "react-icons/di";
-import { SiMongodb, SiExpress, SiAxios, SiJsonwebtokens } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { BiLogoTypescript, BiLogoJavascript, BiLogoSass  } from "react-icons/bi";
+import { SiMongodb, SiExpress, SiAxios, SiJsonwebtokens, SiVite, SiHandlebarsdotjs } from "react-icons/si";
+import { TbBrandNextjs} from "react-icons/tb";
+import { BiLogoTypescript, BiLogoJavascript, BiLogoSass, BiLogoFirebase, BiLogoJquery  } from "react-icons/bi";
 
 const Portfolio = () => {
   const renderPortfolio = (portfolio) => {
@@ -31,12 +31,18 @@ const Portfolio = () => {
                           || eachTech === "css" ? <DiCss3/>: ""
                           || eachTech === "mongo" ? <SiMongodb />: ""
                           || eachTech === "node" ? <DiNodejsSmall />: ""
+                          || eachTech === "jwt" ? <SiJsonwebtokens  />: ""
                           || eachTech === "express" ? <SiExpress />: ""
                           || eachTech === "axios" ? <SiAxios />: ""
-                          || eachTech === "jwt" ? <SiJsonwebtokens />: ""
                           || eachTech === "next" ? <TbBrandNextjs />: ""
                           || eachTech === "ts" ? <BiLogoTypescript />: ""
-                          || eachTech === "sass" ? <BiLogoSass />: ""                  
+                          || eachTech === "sass" ? <BiLogoSass />: ""   
+                          || eachTech === "vite" ? <SiVite />: "" 
+                          || eachTech === "firebase" ? <BiLogoFirebase />: ""    
+                          || eachTech === "handlebars" ? <SiHandlebarsdotjs />: ""  
+                          || eachTech === "jquery" ? <BiLogoJquery />: ""  
+
+
                          }</p>                                                           
                     );
                   })}
