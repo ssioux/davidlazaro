@@ -68,10 +68,12 @@
       }
 
       .description {
-        font-size: 14px;
+        display: flex;
+        font-size: 30px;
         margin-bottom: 5px;
         color: #fff;
         font-weight: 700;
+   
       }
 
       .btn {
