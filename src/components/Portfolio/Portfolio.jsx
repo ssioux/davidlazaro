@@ -41,8 +41,6 @@ const Portfolio = () => {
                           || eachTech === "firebase" ? <BiLogoFirebase />: ""    
                           || eachTech === "handlebars" ? <SiHandlebarsdotjs />: ""  
                           || eachTech === "jquery" ? <BiLogoJquery />: ""  
-
-
                          }</p>                                                           
                     );
                   })}

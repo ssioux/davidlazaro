@@ -1,13 +1,21 @@
 import "./about.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { DiCss3, DiReact, DiHtml5, DiNodejsSmall } from "react-icons/di";
 import {
-  faAngular,
-  faCss3,
-  faGitAlt,
-  faHtml5,
-  faJsSquare,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
+  SiMongodb,
+  SiExpress,
+  SiAxios,
+  SiJsonwebtokens,
+  SiVite,
+  SiHandlebarsdotjs,
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import {
+  BiLogoTypescript,
+  BiLogoJavascript,
+  BiLogoSass,
+  BiLogoFirebase,
+  BiLogoJquery,
+} from "react-icons/bi";
 
 const About = () => {
   return (
@@ -23,7 +31,7 @@ const About = () => {
 
       <section className="about-page">
         <div className="about-text-zone">
-          <h1>About me</h1>
+          <h1>Sobre mi</h1>
           <p>
             I am a very ambitious front-end developer looking for a role in an
             established IT company with the opportunity to work with the latest
@@ -40,26 +48,22 @@ const About = () => {
           </p>
         </div>
         <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-            </div>
-          </div>
+          <BiLogoJavascript />
+          <DiReact />
+          <DiHtml5 />
+          <DiCss3 />
+          <SiMongodb />
+          <DiNodejsSmall />
+          <SiJsonwebtokens />
+          <SiExpress />
+          <SiAxios />
+          <TbBrandNextjs />
+          <BiLogoTypescript />
+          <SiVite />
+          <BiLogoSass />
+          <BiLogoJquery />
+          <BiLogoFirebase />
+          <SiHandlebarsdotjs />
         </div>
       </section>
 
