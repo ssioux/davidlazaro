@@ -67,7 +67,7 @@ const Sidebar = () => {
           smooth
           to="#about"
         >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" /> About
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" /> Exp & Skills
         </HashLink>
 
         <HashLink

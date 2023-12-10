@@ -6,13 +6,15 @@ import { SiMongodb, SiExpress, SiAxios, SiJsonwebtokens, SiVite, SiHandlebarsdot
 import { TbBrandNextjs} from "react-icons/tb";
 import { BiLogoTypescript, BiLogoJavascript, BiLogoSass, BiLogoFirebase, BiLogoJquery  } from "react-icons/bi";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub} from "@fortawesome/free-brands-svg-icons";
 const Portfolio = () => {
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
         {portfolio.map((port, idx) => {
           return (
-            <div className="image-box" key={idx}>
+            <div className="image-box" key={idx} onClick={() => window.open(port.webUrl)}>
               <img
                 src={port.image}
                 className="portfolio-image"
@@ -47,16 +49,9 @@ const Portfolio = () => {
                 </h4>
                 <button
                   className="btn"
-                  onClick={() => window.open(port.webUrl)}
-                >
-                  View
-                </button>
-
-                <button
-                  className="btn"
                   onClick={() => window.open(port.codeUrl)}
                 >
-                  Code
+                 c <FontAwesomeIcon icon={faGithub}/> de
                 </button>
               </div>
             </div>
