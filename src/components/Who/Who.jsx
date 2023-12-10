@@ -62,6 +62,7 @@ function Who() {
             />
           </h1>
           <h2>Full Stack </h2>
+          <div className="group-anc">
           <HashLink smooth to="#contact" className="flat-button">
             CONTACTA ME <FontAwesomeIcon icon={faEnvelope} />
           </HashLink>
@@ -81,6 +82,7 @@ function Who() {
           >
             GitHub <FontAwesomeIcon icon={faGithub} />
           </a>
+          </div>
         </div>
         <div className="picture-zone">
           <img src={davidPicture} alt="David-picture" />

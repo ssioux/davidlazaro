@@ -61,10 +61,15 @@ body {
   body {
     overflow: visible;
   }
+
   .who-page {
-    width: 500px;
+    width: 100%;
+    margin-bottom: 5%;
+    
   }
+
   .contact-page {
-    width:100;
+    width:100%;
+    margin-left: 5%;
   }
 }

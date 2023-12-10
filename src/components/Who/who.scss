@@ -11,6 +11,7 @@
   .text-zone {
     width: 50%;
     margin-left: 15%;
+
     img {
       width: 45px;
     }
@@ -20,7 +21,7 @@
     width: 50%;
 
     img {
-      width: 400px;
+      width: 50%;
       border-radius: 10px;
       box-shadow: rgb(82, 58, 58) 0px 2px 4px 0px,
         rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -84,48 +85,49 @@
 
 @media screen and (max-width: 1200px) {
   .who-page {
-    width: auto;
-    margin-left: 9px;
-    margin-bottom: 30px;
+    padding-top: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 0%;
 
-    svg {
-      display: none;
-    }
-
-    .page {
+    .text-zone {
+      width: 100%;
+      transform: none;
+      box-sizing: border-box;
+      margin-left: 5%;
+      margin-bottom: 5%;
+      display: flex;
       flex-direction: column;
 
-      .text-zone {
-        position: initial;
+      .group-anc {
+        display: none;
+        flex-direction: column;
+      }
+      img {
+        width: 30px;
+      }
+    }
+
+    .picture-zone {
+      margin: 0 auto;
+
+      img {
         width: 100%;
-        transform: none;
-        padding: 0px;
-        box-sizing: border-box;
-        margin-left: 20px;
       }
+    }
 
-      h1 {
-        color: #fff;
-        font-size: 60px;
-        line-height: 53px;
-        margin: 0;
-        font-family: "Coolvetica";
-        font-weight: 400;
-      }
-      h2 {
-        margin-bottom: 40px;
-      }
+    h1 {
+      color: #fff;
+      font-size: 43px;
+      line-height: 53px;
+      font-weight: 500;
+    }
 
-      .flat-button {
-        float: none;
-        width: 125px;
-      }
-
-      .picture-zone {
-        margin-top: 40px;
-
-        width: 40%;
-      }
+    .flat-button {
+      float: none;
+      width: fit-content;
     }
   }
 }
