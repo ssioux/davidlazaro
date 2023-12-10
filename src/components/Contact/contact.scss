@@ -147,19 +147,11 @@
 
 @media screen and (max-width: 1200px) {
   .contact-page {
-    padding-left: 0px;
-    padding-right: 0px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     .contact-text-zone {
-      h1 {
-        color: #333;
-        font-size: 10px;
-        line-height: 53px;
-        margin: 0;
-        font-family: "Coolvetica";
-        font-weight: 400;
-        margin-bottom: 5%;
-      }
-
+      width: 100%;
       p {
         color: white;
         font-size: 20px;
@@ -224,24 +216,6 @@
         box-sizing: border-box;
         min-height: 150px;
         border-radius: 10px;
-      }
-
-      .flat-button {
-        cursor: pointer;
-        color: #d13636;
-        font-size: 11px;
-        letter-spacing: 3px;
-        text-decoration: none;
-        padding: 8px 10px;
-        border: 1px solid #333;
-        float: left;
-        border-radius: 4px;
-        background: 0 0;
-        text-transform: uppercase;
-        float: right;
-        text-align: center;
-        margin-right: 10px;
-        background-color: #333;
       }
     }
 

@@ -31,7 +31,7 @@ const About = () => {
 
       <section className="about-page">
         <div className="about-text-zone">
-          <h1>Sobre mi</h1>
+          <h1>Experience & Skills</h1>
           <p>
             I am a very ambitious front-end developer looking for a role in an
             established IT company with the opportunity to work with the latest
