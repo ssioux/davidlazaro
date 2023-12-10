@@ -1,12 +1,10 @@
 .nav-bar {
   position: fixed;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   background: transparent;
-  width: 100%;
+  width: 100vw;
   height: 70px;
   z-index: 99;
   min-width: 500px;
@@ -99,7 +97,7 @@
 
 @media screen and (max-width: 1200px) {
   .nav-bar {
-    position: fixed;
+
     background-color: #fff;
     box-shadow: rgb(209, 54, 54) 0px 2px 4px 0px,
       rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -150,6 +148,42 @@
         height: 300px;
         box-shadow: rgb(209, 54, 54) 0px 2px 4px 0px,
           rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      }
+    }
+
+    .scrolled {
+      position: fixed;
+      padding: 0px 0;
+      background: #fff;
+      box-shadow: rgb(209, 54, 54) 0px 2px 15px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      transition: all 0.1s ease-in;
+      nav {
+        a {
+          color: #747474;
+          transition: all 0.3s ease-out;
+          svg {
+            color: #747474;
+            transition: all 0.3s ease-out;
+          }
+        }
+    
+        a:hover {
+          color: #333;
+          transition: all 0.3s ease-in;
+    
+          svg {
+            color: #333;
+            transition: all 0.3s ease-in;
+          }
+        }
+    
+        a.active {
+          color: rgb(209, 54, 54);
+          svg {
+            color: rgb(209, 54, 54);
+          }
+        }
       }
     }
 

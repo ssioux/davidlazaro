@@ -25,32 +25,6 @@ body {
   background: #333;
 }
 
-.dashboard {
-  padding: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid red;
-  width: 100%;
-}
-
-.dashboard-form {
-  border: 2px solid blue;
-}
-.dashboard-list {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid green;
-  width: 200px;
-}
-
-.dashboard-edit {
-  border: 2px solid white;
-}
-.dashboard-list h3 {
-  color: #fff;
-}
-
 .error-page {
   display: flex;
   justify-content: center;
@@ -65,11 +39,11 @@ body {
   .who-page {
     width: 100%;
     margin-bottom: 5%;
-    
   }
 
   .contact-page {
-    width:100%;
-    margin-left: 5%;
+    width: 100%;
   }
+
+  
 }
