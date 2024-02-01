@@ -51,8 +51,15 @@ const Portfolio = () => {
                   className="btn"
                   onClick={() => window.open(port.codeUrl)}
                 >
-                 c <FontAwesomeIcon icon={faGithub}/> de
+                 CODE <FontAwesomeIcon icon={faGithub}/>
                 </button>
+                {port.codeApi ? <button
+                  className="btn"
+                  onClick={() => window.open(port.codeApi)}
+                >
+                 Api <FontAwesomeIcon icon={faGithub}/>
+                </button> : ""}
+                
               </div>
             </div>
           );

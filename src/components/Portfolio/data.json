@@ -4,8 +4,9 @@
       "image": "/covers/esChall-project.png",
       "name": "ES-CHALLENGE",
       "description": "Generador de torneos",
-      "webUrl": "",
+      "webUrl": "https://es-challenge-client.vercel.app/",
       "codeUrl": "https://github.com/ssioux/es-challenge-client",
+      "codeApi": "https://github.com/ssioux/es-challenge-server",
       "tech": [
         "js",
         "react",
